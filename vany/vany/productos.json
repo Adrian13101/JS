@@ -3,7 +3,7 @@
     "id_producto": 1,
     "nombre": "matero",
     "precio": 12000.0,
-    "imagen": "img/bolso1.jpg",
+    "imagen": "http://127.0.0.1:5500/img/bolso1.jpg",
     "categoria": {
       "id_categoria": 1,
       "nombre": "bolsos materos"
@@ -13,7 +13,7 @@
     "id_producto": 2,
     "nombre": "bolso de flores",
     "precio": 9500.0,
-    "imagen": "img/bolso2.jpg",
+    "imagen": "http://127.0.0.1:5500/img/bolso2.jpg",
     "categoria": {
       "id_categoria": 2,
       "nombre": "bolso de asado"
@@ -23,7 +23,7 @@
     "id_producto": 3,
     "nombre": "bolso de margaritas",
     "precio": 15800.0,
-    "imagen": "img/bolso3.jpg",
+    "imagen": "http://127.0.0.1:5500/img/bolso3.jpg",
     "categoria": {
       "id_categoria": 3,
       "nombre": "bolso de cuero"
@@ -33,7 +33,7 @@
     "id_producto": 4,
     "nombre": "cartera jean",
     "precio": 11200.0,
-    "imagen": "img/bolso5.webp",
+    "imagen": "http://127.0.0.1:5500/img/bolso5.webp",
     "categoria": {
       "id_categoria": 4,
       "nombre": "cartera jean"
@@ -44,7 +44,7 @@
     "id_producto": 5,
     "nombre": "bolso de cuero",
     "precio": 25000.0,
-    "imagen": "img/bolso4.webp",
+    "imagen": "http://127.0.0.1:5500/img/bolso4.webp",
     "categoria": {
       "id_categoria": 5,
       "nombre": ""
@@ -54,7 +54,7 @@
     "id_producto": 6,
     "nombre": "Bolso de Jean",
     "precio": 9500.0,
-    "imagen": "img/bolso6.webp",
+    "imagen": "http://127.0.0.1:5500/img/bolso6.webp",
     "categoria": {
       "id_categoria": 6,
       "nombre": ""
