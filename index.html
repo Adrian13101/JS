@@ -1,99 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Tienda de Carteras</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Carteras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header>
-  
-   
-    <img class="logo" src="img/logo.png" alt="logo">
-  
-  <a href="https://www.instagram.com/vanybolsosycarteras"target=" _blank" >
-    <img class="ig" src="img/igg.png" alt="instagram">
-  </a>
-  
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-</header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
-<nav>
-  
-  <a href="pages/carteras.html">Carteras</a>
-  <a href="pages/bolsos.html">Bolsos Materos</a>
-  
-</nav>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/logo.png" alt="logo" />
 
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="img/banner1.webp" class="d-block w-100" alt="...">
+      <div class="redes">
+        <a
+          href="https://www.instagram.com/vanybolsosycarteras/"
+          target=" _blank"
+          class="instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <button id="btnCarrito" class="logo-carrito">🛒</button>
+    </header>
+
+    <div id="carrito" class="carrito">
+      <button id="cerrarCarrito">✖</button>
+
+      <h2>Mi carrito</h2>
+      <div id="listaCarrito"></div>
+      <button id="vaciar-carrito">Vaciar carrito</button>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/banner2.webp" class="d-block w-100" alt="...">
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="img/banner1.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/banner2.webp" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="img/banner3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <section id="cards" class="productos"></section>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <footer>
+      <p>© 2026 VanyCarteras - Todos los derechos reservados</p>
+    </footer>
 
-<section class="productos">
-
-  <div class="card">
-    <img src="img/bolso1.jpg" alt="matero corazones">
-    <h3>Matero</h3>
-    <p class="precio">$12.000</p>
-    <button class="btn">Comprar</button>
-  </div>
-
-  <div class="card">
-    <img src="img/bolso2.jpg" alt="bolso asasdo">
-    <h3>Bolso de Asado</h3>
-    <p class="precio">$9.500</p>
-    <button class="btn">Comprar</button>
-  </div>
-
-  <div class="card">
-    <img src="img/bolso4.webp" alt="bolso Cuero">
-    <h3>Bolso de Cuero</h3>
-    <p class="precio">$15.800</p>
-    <button class="btn">Comprar</button>
-  </div>
-
-  <div class="card">
-    <img src="img/bolso5.webp" alt="cartera jean">
-    <h3>Cartera jean</h3>
-    <p class="precio">$11.200</p>
-    <button class="btn">Comprar</button>
-  </div>
-
-</section>
-
-
-<footer>
-  <p>© 2026 VanyCarteras - Todos los derechos reservados</p>
-</footer>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
