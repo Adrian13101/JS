@@ -22,7 +22,7 @@ Swal.mixin({
 const cards = document.getElementById("cards");
 
 const peticion = () => {
-  fetch("/productos.json")
+  fetch("./productos.json")
     .then((respuesta) => respuesta.json())
     .then((datos) => {
       const data = datos;
